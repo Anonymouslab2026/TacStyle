@@ -48,7 +48,7 @@
 
 <body>
 
-  <h1>TacStyle</h1>
+  <h1>{TacStyle: Personalizing Tactile Robot Policies \\ using Structured Behavior Representations}</h1>
 
   <p style="text-align:center;">
     Anonymous Submission
@@ -58,7 +58,14 @@
     <h2>Abstract</h2>
 
     <p>
-      Paste the paper abstract here.
+      Robotic systems that assist humans should be capable of adapting their behaviors to individual user preferences. For instance, users may want a robotic arm to adjust the amount of force it applies while folding their laundry or cleaning furniture. Natural language provides an intuitive way for humans to communicate such preferences.
+Recent progress in large-scale language-conditioned policies has shown that robots can successfully use language prompts to determine \emph{what} task to perform. However, extending the same approach to realize \emph{how} the task should be performed requires detailed labels describing the preferences or styles of trajectories in the task data.
+Not only is collecting such annotations challenging, but conditioning directly on these labels may also fail to provide fine-grained control over 
+a continuous range of behaviors.
+For example, it can be difficult to convey the exact force that a robot must apply through abstract instructions like ``apply a bit more pressure than before''.
+Therefore, in this work, we propose using language to reason over preferred behaviors instead of directly generating them.
+We first learn a structured latent representation that organizes user preferences according to differences in the corresponding trajectories.
+Then, given a preference prompt, we use a foundation model to interpret this latent space and choose a value that produces the desired behavior. Through both simulation and real-world experiments, we show that selecting robot behaviors from an intuitively structured latent space enables more precise adaptation to user preferences while requiring significantly fewer preference labels than language-conditioned policies.
     </p>
   </div>
 
